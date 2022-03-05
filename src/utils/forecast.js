@@ -19,7 +19,11 @@ const forecast = (latitude, longitude, callback) => {
         body.current.temperature +
         ' degrees outside. It feels like ' +
         body.current.feelslike +
-        ' degrees.';
+        ' degrees. The humidity is ' +
+        body.current.humidity +
+        '%. The wind speed is ' +
+        body.current.wind_speed +
+        '.';
       callback(undefined, message);
     }
   });
