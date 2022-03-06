@@ -23,7 +23,7 @@ const forecast = (latitude, longitude, callback) => {
         body.current.humidity +
         '%. The wind speed is ' +
         body.current.wind_speed +
-        '.';
+        'km/h.';
       callback(undefined, message);
     }
   });
